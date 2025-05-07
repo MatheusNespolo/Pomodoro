@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <!-- Título -->
+            <h1>Pomodoro ⌚</h1>
+
+            <!-- Entradas -->
+            <label for="Tempo1">Defina o primeiro tempo:</label>
+            <input type="number" name="Tempo1" id="Tempo1">
+            <label for="Tempo2">Defina o segundo tempo:</label>
+            <input type="number" name="Tempo2" id="Tempo2">
+            <br>
+            <label for="Tempo3">Defina o terceiro tempo:</label>
+            <input type="number" name="Tempo3" id="Tempo3">
+            <label for="Tempo4">Defina o quarto tempo:</label>
+            <input type="number" name="Tempo4" id="Tempo4">
+            <br>
+            <label for="Atividade1">Primeira atividade:</label>
+            <input type="text" name="Atividade1" id="Atividade1">
+            <label for="Atividade2">Segunda atividade:</label>
+            <input type="text" name="Atividade2" id="Atividade2">
+            <br>
+            <label for="Atividade3">Terceira atividade:</label>
+            <input type="text" name="Atividade3" id="Atividade3">
+            <label for="Atividade4">Quarta atividade:</label>
+            <input type="text" name="Atividade4" id="Atividade4">
+            <br>
+
+            <!-- Acionamento -->
+            <button id="botaoInicio">Iniciar cronômetro</button>
+
+        </div>
+    </header>
+    <main class="divisor-relógio">
+        <div class="relogio escondido" id="relogio"></div>
+    </main>
+<!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.color1 {color: #070907;}
+.color2 {color: #182226;}
+.color3 {color: #2e4751;}
+.color4 {color: #526b74;}
+.color5 {color: #77a2a6;}
+
+html {
+    color-scheme: dark;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 200px;
+    background-color: #182226;
+    color: #77a2a6;
+    box-shadow: black 5px 5px 10px;
+    text-align: center;
+}
+
