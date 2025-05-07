@@ -7,14 +7,14 @@
 .color5 {color: #77a2a6;}
 
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #070907;
+  font-family: "Cal Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #070907;
   }
   
   .container {
