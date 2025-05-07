@@ -1,60 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Estilização -->
-    <link rel="stylesheet" href="src/style.css">
-    <!-- Fonte -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="src/style.css" />
 </head>
 <body>
-    <header>
-        <!-- Título -->
-        <h1>Pomodoro ⌚</h1>
-        <div class="menu">
-            <!-- Entradas -->
-            <div class="tempos">
-                <h2>Tempos (min)</h2>
-                <label for="Tempo1">Defina o primeiro tempo:</label>
-                <input type="number" name="Tempo1" id="Tempo1">
-                <br>
-                <label for="Tempo2">Defina o segundo tempo:</label>
-                <input type="number" name="Tempo2" id="Tempo2">
-                <br>
-                <label for="Tempo3">Defina o terceiro tempo:</label>
-                <input type="number" name="Tempo3" id="Tempo3">
-                <br>
-                <label for="Tempo4">Defina o quarto tempo:</label>
-                <input type="number" name="Tempo4" id="Tempo4">
-                <br>
+  <main class="container">
+    <h1>Pomodoro</h1>
+
+    <form id="pomodoro-form">
+      <div class="activities">
+        <!-- Inputs para 4 atividades -->
+        <form id="pomodoro-form">
+            <div class="activities">
+              <div class="activity">
+                <input type="text" name="activity1" placeholder="Atividade 1" required />
+                <input type="number" name="time1" placeholder="Minutos" required min="1" />
+              </div>
+              <div class="activity">
+                <input type="text" name="activity2" placeholder="Atividade 2" required />
+                <input type="number" name="time2" placeholder="Minutos" required min="1" />
+              </div>
+              <div class="activity">
+                <input type="text" name="activity3" placeholder="Atividade 3" required />
+                <input type="number" name="time3" placeholder="Minutos" required min="1" />
+              </div>
+              <div class="activity">
+                <input type="text" name="activity4" placeholder="Atividade 4" required />
+                <input type="number" name="time4" placeholder="Minutos" required min="1" />
+              </div>
             </div>
-            <div class="atividades">
-                <h2>Atividades</h2>
-                <label for="Atividade1">Primeira atividade:</label>
-                <input type="text" name="Atividade1" id="Atividade1">
-                <br>
-                <label for="Atividade2">Segunda atividade:</label>
-                <input type="text" name="Atividade2" id="Atividade2">
-                <br>
-                <label for="Atividade3">Terceira atividade:</label>
-                <input type="text" name="Atividade3" id="Atividade3">
-                <br>
-                <label for="Atividade4">Quarta atividade:</label>
-                <input type="text" name="Atividade4" id="Atividade4">
-                <br>
-            </div>
+            <button type="submit">Iniciar</button>
+          </form>          
+      </div>
+
+      <section id="timer" class="hidden">
+        <h2 id="current-activity"></h2>
+        <div id="clock">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="bg" cx="50" cy="50" r="45" />
+            <circle class="progress" cx="50" cy="50" r="45"/>
+          </svg>
+          <div id="countdown">00:00</div>
+          <div class="controls">
+            <button type="button" id="pause-btn">Pausar</button>
+            <button type="button" id="resume-btn" class="hidden">Continuar</button>
+            <button type="button" id="reset-btn">Reiniciar</button>
+          </div>
         </div>
-        <!-- Acionamento -->
-        <button id="botaoInicio">Iniciar cronômetro</button>
-    </header>
-    <main class="divisor-relógio">
-        <div class="relogio escondido" id="relogio"></div>
-    </main>
-<!-- JavaScript -->
-    <script src="script.js"></script>
+      </section>
+  </main>
+
+  <script src="src/script.js"></script>
 </body>
 </html>
