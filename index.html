@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Estilização -->
     <link rel="stylesheet" href="src/style.css">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <!-- Título -->
+        <h1>Pomodoro ⌚</h1>
         <div class="menu">
-            <!-- Título -->
-            <h1>Pomodoro ⌚</h1>
-
             <!-- Entradas -->
-            <label for="Tempo1">Defina o primeiro tempo:</label>
-            <input type="number" name="Tempo1" id="Tempo1">
-            <label for="Tempo2">Defina o segundo tempo:</label>
-            <input type="number" name="Tempo2" id="Tempo2">
-            <br>
-            <label for="Tempo3">Defina o terceiro tempo:</label>
-            <input type="number" name="Tempo3" id="Tempo3">
-            <label for="Tempo4">Defina o quarto tempo:</label>
-            <input type="number" name="Tempo4" id="Tempo4">
-            <br>
-            <label for="Atividade1">Primeira atividade:</label>
-            <input type="text" name="Atividade1" id="Atividade1">
-            <label for="Atividade2">Segunda atividade:</label>
-            <input type="text" name="Atividade2" id="Atividade2">
-            <br>
-            <label for="Atividade3">Terceira atividade:</label>
-            <input type="text" name="Atividade3" id="Atividade3">
-            <label for="Atividade4">Quarta atividade:</label>
-            <input type="text" name="Atividade4" id="Atividade4">
-            <br>
-
+            <div class="tempos">
+                <h2>Tempos</h2>
+                <label for="Tempo1">Defina o primeiro tempo:</label>
+                <input type="number" name="Tempo1" id="Tempo1">
+                <br>
+                <label for="Tempo2">Defina o segundo tempo:</label>
+                <input type="number" name="Tempo2" id="Tempo2">
+                <br>
+                <label for="Tempo3">Defina o terceiro tempo:</label>
+                <input type="number" name="Tempo3" id="Tempo3">
+                <br>
+                <label for="Tempo4">Defina o quarto tempo:</label>
+                <input type="number" name="Tempo4" id="Tempo4">
+                <br>
+            </div>
+            <div class="atividades">
+                <h2>Atividades</h2>
+                <label for="Atividade1">Primeira atividade:</label>
+                <input type="text" name="Atividade1" id="Atividade1">
+                <label for="Atividade2">Segunda atividade:</label>
+                <input type="text" name="Atividade2" id="Atividade2">
+                <br>
+                <label for="Atividade3">Terceira atividade:</label>
+                <input type="text" name="Atividade3" id="Atividade3">
+                <label for="Atividade4">Quarta atividade:</label>
+                <input type="text" name="Atividade4" id="Atividade4">
+                <br>
+            </div>
             <!-- Acionamento -->
             <button id="botaoInicio">Iniciar cronômetro</button>
 

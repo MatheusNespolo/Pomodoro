@@ -1,3 +1,4 @@
+/* Paleta de cor */
 .color1 {color: #070907;}
 .color2 {color: #182226;}
 .color3 {color: #2e4751;}
@@ -11,10 +12,51 @@ html {
 }
 
 header {
-    height: 200px;
+    height: 240px;
     background-color: #182226;
     color: #77a2a6;
     box-shadow: black 5px 5px 10px;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header h2 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.menu {
+    justify-content: center;
+    color: white;
+    text-shadow: black 2px 2px 5px;
+    display: flex;
+}
+
+.tempos {
+    width: 50vw;
+    justify-content: center;
+}
+
+.atividades {
+    width: 50vw;
+    justify-content: center;
+}
+
+#Tempo1, #Tempo2, #Tempo3, #Tempo4 {
+    width: 40px;
+}
+#Atividade1, #Atividade2, #Atividade3, #Atividade4 {
+    width: 200px;
+}
+
+body {
+    font-family: "Cal Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
