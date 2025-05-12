@@ -18,6 +18,8 @@ let isPaused = false
 const pauseBtn = document.getElementById("pause-btn")
 const resumeBtn = document.getElementById("resume-btn")
 const resetBtn = document.getElementById("reset-btn")
+const restartBtn = document.getElementById("restart-btn")
+restartBtn.addEventListener("click", resetAll)
 
 pauseBtn.addEventListener("click", pauseTimer)
 resumeBtn.addEventListener("click", resumeTimer)
@@ -44,6 +46,7 @@ function startActivity() {
       currentActivityDisplay.textContent = "Todas atividades concluídas!"
       countdownDisplay.textContent = "00:00"
       hideControls()
+      restartBtn.classList.remove("hidden")
       return
     }
   
@@ -96,6 +99,22 @@ function startActivity() {
     resumeBtn.classList.add("hidden")
     startInterval()
   }
+
+  function resetAll() {
+  clearInterval(interval)
+  currentIndex = 0
+  isPaused = false
+  activities = []
+  remainingSeconds = 0
+  totalSeconds = 0
+  restartBtn.classList.add("hidden")
+  form.reset()
+  form.classList.remove("hidden")
+  timerSection.classList.add("hidden")
+  updateDisplay(0)
+  updateProgress(0)
+  document.getElementById("activity-list").innerHTML = ''
+}
   
   function showControls() {
     pauseBtn.classList.remove("hidden")
