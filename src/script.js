@@ -113,7 +113,6 @@ function startActivity() {
   timerSection.classList.add("hidden")
   updateDisplay(0)
   updateProgress(0)
-  document.getElementById("activity-list").innerHTML = ''
 }
   
   function showControls() {
