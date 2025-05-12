@@ -41,22 +41,22 @@
           </form>
       </div>
 
-      <section id="timer" class="hidden timer-section">
-  <div class="timer-left">
-    <h2 id="current-activity"></h2>
-    <div id="clock">
-      <svg viewBox="0 0 100 100" class="progress-ring">
-        <circle class="bg" cx="50" cy="50" r="45" />
-        <circle class="progress" cx="50" cy="50" r="45" />
-      </svg>
-      <div id="countdown">00:00</div>
-    </div>
-    <div class="controls">
-      <button type="button" id="pause-btn">Pausar</button>
-      <button type="button" id="resume-btn" class="hidden">Continuar</button>
-      <button type="button" id="reset-btn">Resetar</button>
-</section>
-      <button type="button" id="restart-btn" class="hidden">Reiniciar</button>
+      <section id="timer" class="hidden">
+        <h2 id="current-activity"></h2>
+        <div id="clock">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="bg" cx="50" cy="50" r="45" />
+            <circle class="progress" cx="50" cy="50" r="45"/>
+          </svg>
+          <div id="countdown">00:00</div>
+          <div class="controls">
+            <button type="button" id="pause-btn">Pausar</button>
+            <button type="button" id="resume-btn" class="hidden">Continuar</button>
+            <button type="button" id="reset-btn">Resetar</button>
+            <button type="button" id="restart-btn" class="hidden">Reiniciar</button>
+          </div>
+        </div>
+      </section>
   </main>
 
   <script src="src/script.js"></script>

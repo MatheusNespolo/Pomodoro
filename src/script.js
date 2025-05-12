@@ -19,11 +19,11 @@ const pauseBtn = document.getElementById("pause-btn")
 const resumeBtn = document.getElementById("resume-btn")
 const resetBtn = document.getElementById("reset-btn")
 const restartBtn = document.getElementById("restart-btn")
-restartBtn.addEventListener("click", resetAll)
 
 pauseBtn.addEventListener("click", pauseTimer)
 resumeBtn.addEventListener("click", resumeTimer)
 resetBtn.addEventListener("click", resetTimer)
+restartBtn.addEventListener("click", resetAll)
 
 form.addEventListener("submit", e => {
   e.preventDefault()
@@ -45,6 +45,7 @@ function startActivity() {
     if (currentIndex >= activities.length) {
       currentActivityDisplay.textContent = "Todas atividades concluídas!"
       countdownDisplay.textContent = "00:00"
+      hideControls()
       restartBtn.classList.remove("hidden")
       return
     }
