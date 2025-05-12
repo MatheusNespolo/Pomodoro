@@ -45,7 +45,6 @@ function startActivity() {
     if (currentIndex >= activities.length) {
       currentActivityDisplay.textContent = "Todas atividades concluídas!"
       countdownDisplay.textContent = "00:00"
-      hideControls()
       restartBtn.classList.remove("hidden")
       return
     }
