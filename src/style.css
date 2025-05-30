@@ -18,7 +18,7 @@ body {
   }
   
   .container {
-    max-width: 400px;
+    max-width: 600px;
     width: 90%;
     height: 65vh;
     padding: 20px;
@@ -75,6 +75,7 @@ body {
 
   .activity-panel h3 {
     margin-top: 0;
+    color: #77a2a6;
   }
 
   #activity-list li{
@@ -161,7 +162,7 @@ body {
   
   @media (min-width: 600px) {
     .container {
-      max-width: 500px;
+      max-width: 600px;
     }
     .timer-section {
       flex-direction: row;
