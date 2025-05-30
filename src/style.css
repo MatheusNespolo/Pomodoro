@@ -60,6 +60,35 @@ body {
     cursor: pointer;
     margin-top: 15px;
   }
+
+  .timer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .activity-panel {
+    border-left: 2 px solid #eee;
+    padding-left: 15px;
+    flex-basis: 150px;
+  }
+
+  .activity-panel h3 {
+    margin-top: 0;
+  }
+
+  #activity-list li{
+    display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+  }
+
+  #activity-list input {
+    flex: 1;
+    border: 1px solid #182226;
+    padding: 4px 6px;
+    border-radius: 5px;
+  }
   
   #timer {
     text-align: center;
@@ -92,6 +121,7 @@ body {
     height: 200px;
     margin: 20px auto;
     color: #77a2a6;
+    flex: 1
   }
   
   .progress-ring {
@@ -132,6 +162,10 @@ body {
   @media (min-width: 600px) {
     .container {
       max-width: 500px;
+    }
+    .timer-section {
+      flex-direction: row;
+      align-items: flex-start;
     }
   }
   
