@@ -34,6 +34,24 @@ form.addEventListener("submit", e => {
     minutes: parseInt(formData.get(`time${i}`), 10)
   }))
 
+  const activityList = document.getElementById("activity-list")
+  activityList.innerHTML = ''
+  activities.forEach((a, i) => {
+  const li = document.createElement("li")
+  const input = document.createElement("input")
+  input.value = a.name
+  input.dataset.index = i
+  input.addEventListener("input", e => {
+    activities[+e.target.dataset.index].name = e.target.value
+    if (currentIndex === +e.target.dataset.index) {
+      currentActivityDisplay.textContent = e.target.value
+    }
+  })
+  li.appendChild(input)
+  activityList.appendChild(li)
+})
+
+
   form.classList.add("hidden")
   timerSection.classList.remove("hidden")
 
